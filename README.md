@@ -6,4 +6,4 @@ English and Chinese research website. Static HTML/CSS/JavaScript with local port
 
 GitHub Pages deploys `main` from the repository root. Language links lead to the corresponding page. `join.html` redirects legacy links to the Chinese homepage.
 
-The architecture bibliography covers ISCA, MICRO, HPCA and ASPLOS. November 6, 2026 update: 30 DBLP records, 3 MICRO 2026 papers from the official program, and 5 HPCA 2027 author decisions (4 accepted; 1 accepted with shepherding). Homepages feature only the wafer-scale research collection. Other publications are linked through DBLP.
+The architecture bibliography covers ISCA, MICRO, HPCA and ASPLOS. November 6, 2026 update: 30 DBLP records, 3 MICRO 2026 papers from the official program, and 5 HPCA 2027 papers. Homepages feature only the wafer-scale research collection. Other publications are linked through DBLP.
