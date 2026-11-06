@@ -53,3 +53,5 @@ body{background:#fff}.site-shell{box-shadow:none}a[aria-current="page"]{color:va
 .research-framework figure {margin:0}.research-framework img {display:block;width:100%;height:auto;border-radius:8px}
 .research-framework .framework-links {display:flex;flex-wrap:wrap;gap:1rem;margin:.75rem 0 0;font-size:.9rem}
 .research-framework figcaption {font-size:.875rem;line-height:1.65;color:#52656d;margin-top:.75rem}
+
+@media(max-width:640px){.research-framework{margin-block:1.75rem;padding:1rem}.research-framework img{width:auto;max-width:100%;max-height:140px;margin-inline:auto}.research-framework .framework-lead{font-size:1rem}.research-framework figcaption{font-size:.85rem}.research-framework .framework-links{font-size:.9rem;gap:.8rem}}
