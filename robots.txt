@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://huyang-thu.github.io/sitemap.xml
