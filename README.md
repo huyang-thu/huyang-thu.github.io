@@ -2,8 +2,8 @@
 
 https://huyang-thu.github.io/
 
-Static HTML, CSS and JavaScript. No build tools or external asset dependencies.
+English and Chinese research website. Static HTML/CSS/JavaScript with local portrait and no external asset dependencies.
 
-GitHub Pages: deploy from `main`, repository root. Edit the relevant HTML page for content; shared styling is in `style.css`, interactions in `site.js`.
+GitHub Pages deploys `main` from the repository root. Language links lead to the corresponding page. `join.html` redirects legacy links to the Chinese homepage.
 
-The publications page presents selected papers and links to DBLP for the full bibliography.
+The architecture bibliography covers ISCA, MICRO, HPCA and ASPLOS. November 6, 2026 update: 30 DBLP records, 3 MICRO 2026 papers from the official program, and 5 HPCA 2027 author decisions (4 accepted; 1 accepted with shepherding). Homepages feature only the wafer-scale research collection. Other publications are linked through DBLP.
