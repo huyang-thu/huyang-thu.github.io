@@ -19,7 +19,6 @@ button:hover{border-color:#2875a4}input[type=range]{flex:1;min-width:90px;accent
 <div class="page">
  <div class="stage"><canvas id="temp" width="1440" height="810" aria-label="TEMP晶圆级芯片张量分块、物理相邻中继和边算边传机制示意动画"></canvas></div>
  <div class="toolbar"><button id="play">播放</button><button id="restart">从头播放</button><input id="seek" type="range" min="0" max="28" value="0" step="0.01" aria-label="进度"><span id="clock">0.00 / 28.00 秒</span></div>
- <div class="hint">源文件离线可编辑，可拖动进度检查每轮传输。播放一次后静止于结论画面。</div>
 </div>
 <script id="animation-core">
 // HTML, GIF and MP4 use this identical deterministic Canvas 2D drawFrame function.
@@ -298,7 +297,7 @@ play.addEventListener('click',()=>{if(playing){playing=false;cancelAnimationFram
 document.getElementById('restart').addEventListener('click',()=>{cancelAnimationFrame(raf);at=0;resume()});
 seek.addEventListener('input',()=>{playing=false;cancelAnimationFrame(raf);at=Number(seek.value);refresh()});
 window.drawAt=t=>{playing=false;cancelAnimationFrame(raf);at=clamp(t,0,DURATION);refresh()};
-document.fonts.ready.then(refresh);
+document.fonts.ready.then(resume);
 })();
 </script>
 </body></html>

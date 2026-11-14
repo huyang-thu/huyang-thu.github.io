@@ -224,7 +224,7 @@ function drawFrame(ctx,time){
   document.getElementById('restart').addEventListener('click',()=>{cancelAnimationFrame(raf);at=0;resume()});
   seek.addEventListener('input',()=>{playing=false;cancelAnimationFrame(raf);at=Number(seek.value);refresh()});
   window.drawAt=t=>{playing=false;cancelAnimationFrame(raf);at=Math.min(DURATION,Math.max(0,t));refresh()};
-  document.fonts.ready.then(()=>{refresh();});
+  document.fonts.ready.then(()=>{resume();});
 })();
 </script>
 </body></html>

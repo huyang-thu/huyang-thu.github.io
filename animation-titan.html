@@ -20,7 +20,6 @@ input[type=range]{flex:1;min-width:90px;accent-color:#2875a4}.hint{color:#657e8f
 <div class="page">
  <div class="stage"><canvas id="titan" width="1440" height="810" aria-label="Titan晶圆级系统的片内资源配置、纵向物理预检和机柜级方案共探索机制动画"></canvas></div>
  <div class="toolbar"><button id="play">播放</button><button id="restart">从头播放</button><input id="seek" type="range" min="0" max="28" value="0" step="0.01" aria-label="动画进度"><span id="clock">0.00 / 28.00 秒</span></div>
- <div class="hint">离线可编辑，可拖动进度查看各阶段。单次播放结束后停在结论画面。本图是设计机制示意。</div>
 </div>
 <script id="animation-core">
 // Single deterministic Canvas source for HTML, both GIF variants and MP4.
@@ -305,7 +304,7 @@ play.addEventListener('click',()=>{if(playing){playing=false;cancelAnimationFram
 document.getElementById('restart').addEventListener('click',()=>{cancelAnimationFrame(raf);at=0;resume()});
 seek.addEventListener('input',()=>{playing=false;cancelAnimationFrame(raf);at=Number(seek.value);refresh()});
 window.drawAt=t=>{playing=false;cancelAnimationFrame(raf);at=clamp(t,0,DURATION);refresh()};
-document.fonts.ready.then(refresh)
+document.fonts.ready.then(resume)
 })();
 </script>
 </body>
